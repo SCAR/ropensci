@@ -2,7 +2,7 @@
 
 ## Background
 
-Reproducibility and collaboration are [fundamental to Antarctic and Southern Ocean science](https://doi.org/10.1038/d41586-018-05369-6), and fit seamlessly with the Antarctic Treaty's position that "to the greatest extent feasible and practicable ... scientific observations and results from Antarctica shall be exchanged and made freely available".
+Reproducibility and collaboration are [fundamental to Antarctic and Southern Ocean science](https://doi.org/10.1038/d41586-018-05369-6), and fit seamlessly with the [Antarctic Treaty's](https://www.ats.aq/e/ats.htm) provision that "to the greatest extent feasible and practicable ... scientific observations and results from Antarctica shall be exchanged and made freely available".
 
 [rOpenSci](https://ropensci.org/) is a a non-profit initiative founded in 2011 that promotes open and reproducible research using shared data and reusable software. This is achieved by promoting R software tools that lower the barriers to working with scientific data sources, creating social infrastructure through a welcoming and diverse community, and building the capacity of software users and developers.
 
