@@ -12,7 +12,7 @@ Starting in late 2017, the [Scientific Committee on Antarctic Research](https://
 
 - follow the rOpenSci [Twitter feed](https://twitter.com/rOpenSci) or [blog](https://ropensci.org/blog/)
 
-- contribute an [R package](https://github.com/SCAR/antarctic-r-packages), or improve the documentation or code of an existing one
+- contribute an R package, or improve the documentation or code of an existing one. See the draft [Antarctic R package list](https://github.com/SCAR/antarctic-r-packages) as a starting point
 
 - contribute your R knowledge, as a [code snippet](https://github.com/SCAR/rtools) or [tutorial](https://ropensci.org/tutorials/)
 
