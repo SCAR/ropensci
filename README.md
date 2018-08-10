@@ -16,7 +16,7 @@ Starting in late 2017, the [Scientific Committee on Antarctic Research](https://
 
 - contribute your R knowledge, as a [code snippet](https://github.com/SCAR/rtools) or [tutorial](https://ropensci.org/tutorials/)
 
-- join the [discussion forum](https://discuss.ropensci.org/) or developer slack channel (<a href="mailto:bdanis@ulb.ac.be?subject=SCAR/rOpenSci slack invite">contact us</a> for an invite)
+- join the [discussion forum](https://discuss.ropensci.org/) or developer slack channel (email ben dot raymond squiggly-at aad.gov.au for an invite)
 
 - make [a suggestion](https://github.com/SCAR/ropensci/issues)
 
