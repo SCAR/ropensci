@@ -2,7 +2,7 @@ This article is about R packages that are relevant to Antarctic and Southern Oce
 
 Antarctic and Southern Ocean science covers a diverse range of topics within the geosciences, life sciences, physical sciences, and humanities and social sciences. This article is not intended to be an exhaustive list of packages that are relevant to all of those fields, but rather a synopsis of packages that are for one reason or another of particular interest to Antarctic and Southern Ocean researchers. The definition of "particular interest" is of course largely arbitrary. Packages listed here are generally expected to be at a useful stage of development, or if not, are seeking engagement/input from the wider community.
 
-Contributions are welcome! Please [submit an issue](https://github.com/ropensci/taxonomy/issues), or make a contribution (see the [contribution guidelines](CONTRIBUTING.md)). If you have an issue with one of the packages discussed below, please contact the maintainer of that package.
+Contributions are welcome! Please [submit an issue](https://github.com/SCAR/ropensci/issues), or make a contribution (see the [contribution guidelines](CONTRIBUTING.md)). If you have an issue with one of the packages discussed below, please contact the maintainer of that package.
 
 Many thanks to contributors, including Scott Chamberlain, Michael Sumner, Grant Humphries, Hsun-yi Hsieh, and Anton Van de Putte.
 
