@@ -18,7 +18,7 @@ here are generally expected to be at a useful stage of development, or
 if not, are seeking engagement/input from the wider community.
 
 Contributions are welcome\! Please [submit an
-issue](https://github.com/SCAR/antarctic-r-packages/issues), or make a
+issue](https://github.com/SCAR/ropensci/issues), or make a
 contribution (see the [contribution guidelines](CONTRIBUTING.md)). If
 you have an issue with one of the packages discussed below, please
 contact the maintainer of that package.

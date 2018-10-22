@@ -31,7 +31,7 @@ If you don't want to or can't install these things, then just edit the `antarcti
     If you don't, follow the error messages to fix. If you can't figure out how to fix, just send the PR anyway, and the maintainer will fix.
 
     If you changed anything in the `antarctic.md` file, repeat step 3 to remake files. If everything was fine, proceed.
-	5. Push back up to your account, then [submit a pull request](https://github.com/SCAR/antarctic-r-packages/pulls)
+	5. Push back up to your account, then [submit a pull request](https://github.com/SCAR/ropensci/pulls)
 	
 ## Submit an issue
 
