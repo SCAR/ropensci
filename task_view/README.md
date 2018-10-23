@@ -18,10 +18,10 @@ here are generally expected to be at a useful stage of development, or
 if not, are seeking engagement/input from the wider community.
 
 Contributions are welcome\! Please [submit an
-issue](https://github.com/SCAR/ropensci/issues), or make a
-contribution (see the [contribution guidelines](CONTRIBUTING.md)). If
-you have an issue with one of the packages discussed below, please
-contact the maintainer of that package.
+issue](https://github.com/SCAR/ropensci/issues), or make a contribution
+(see the [contribution guidelines](CONTRIBUTING.md)). If you have an
+issue with one of the packages discussed below, please contact the
+maintainer of that package.
 
 Many thanks to contributors, including Scott Chamberlain, Michael
 Sumner, Grant Humphries, Hsun-yi Hsieh, and Anton Van de Putte.
@@ -59,12 +59,12 @@ context brings with it particular issues including dealing with
 projection properties at high latitudes, coping with data that crosses
 the 180°E line, adding commonly-desired features such as ocean fronts,
 management boundaries, sea ice extent, stations and other geographic
-features, and common contextual layers such as
-    bathymetry.
+features, and common contextual layers such as bathymetry.
 
-  - [sospatial](https://github.com/AustralianAntarcticDivision/sospatial)
-    provides some easy to use Southern Ocean data sets and examples of
-    their use with base graphics, raster, ggplot, and mapview/leaflet.
+  - [SOmap](https://github.com/Maschette/SOmap) aims to provide
+    straightforward mapping functions for Southern Ocean (polar
+    stereographic) maps, along with commonly-used management and
+    contextual layers such as MPA boundaries and ocean fronts.
 
   - [antanym](https://github.com/SCAR/antanym) provides geographic place
     name data from the SCAR Composite Gazetteer of Antarctica, with
