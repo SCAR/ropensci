@@ -61,9 +61,9 @@ the 180°E line, adding commonly-desired features such as ocean fronts,
 management boundaries, sea ice extent, stations and other geographic
 features, and common contextual layers such as bathymetry.
 
-  - [SOmap](https://github.com/Maschette/SOmap) aims to provide
-    straightforward mapping functions for Southern Ocean (polar
-    stereographic) maps, along with commonly-used management and
+  - [SOmap](https://github.com/Maschette/SOmap) is in development, but
+    aims to provide straightforward mapping functions for Southern Ocean
+    (polar stereographic) maps, along with commonly-used management and
     contextual layers such as MPA boundaries and ocean fronts.
 
   - [antanym](https://github.com/SCAR/antanym) provides geographic place
@@ -84,8 +84,9 @@ features, and common contextual layers such as bathymetry.
 
   - there is some Antarctic-related mapping functionality in
     [prtools](https://github.com/pierreroudier/prtools),
-    [atlasr](https://github.com/jiho/atlasr), and
-    [CCAMLRGIS](https://github.com/ccamlr/CCAMLRGIS).
+    [atlasr](https://github.com/jiho/atlasr),
+    [CCAMLRGIS](https://github.com/ccamlr/CCAMLRGIS), and
+    [sospatial](https://github.com/AustralianAntarcticDivision/sospatial).
 
 ### Environmental Data
 

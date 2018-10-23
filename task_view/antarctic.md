@@ -23,7 +23,7 @@ For more detail on R packages dealing with taxonomy in general, see the [rOpenSc
 
 Mapping is a very common task, and in an Antarctic/Southern Ocean context brings with it particular issues including dealing with projection properties at high latitudes, coping with data that crosses the 180&deg;E line, adding commonly-desired features such as ocean fronts, management boundaries, sea ice extent, stations and other geographic features, and common contextual layers such as bathymetry.
 
-- [SOmap](https://github.com/Maschette/SOmap) aims to provide straightforward mapping functions for Southern Ocean (polar stereographic) maps, along with commonly-used management and contextual layers such as MPA boundaries and ocean fronts.
+- [SOmap](https://github.com/Maschette/SOmap) is in development, but aims to provide straightforward mapping functions for Southern Ocean (polar stereographic) maps, along with commonly-used management and contextual layers such as MPA boundaries and ocean fronts.
 
 - [antanym](https://github.com/SCAR/antanym) provides geographic place name data from the SCAR Composite Gazetteer of Antarctica, with plans to extend the coverage to subantarctic and informal gazetteers at a later date.
 
@@ -33,7 +33,7 @@ Mapping is a very common task, and in an Antarctic/Southern Ocean context brings
 
 - <pkg>palr</pkg> provides colour palettes for data, based on some well known remotely sensed data sets for sea ice concentration, sea surface temperature and chlorophyll-*a*.
 
-- there is some Antarctic-related mapping functionality in [prtools](https://github.com/pierreroudier/prtools), [atlasr](https://github.com/jiho/atlasr), and [CCAMLRGIS](https://github.com/ccamlr/CCAMLRGIS).
+- there is some Antarctic-related mapping functionality in [prtools](https://github.com/pierreroudier/prtools), [atlasr](https://github.com/jiho/atlasr), [CCAMLRGIS](https://github.com/ccamlr/CCAMLRGIS), and [sospatial](https://github.com/AustralianAntarcticDivision/sospatial).
 
 ### Environmental Data
 

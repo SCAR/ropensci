@@ -19,12 +19,12 @@
     <h3 id="mapping">Mapping</h3>
     <p>Mapping is a very common task, and in an Antarctic/Southern Ocean context brings with it particular issues including dealing with projection properties at high latitudes, coping with data that crosses the 180°E line, adding commonly-desired features such as ocean fronts, management boundaries, sea ice extent, stations and other geographic features, and common contextual layers such as bathymetry.</p>
     <ul>
-    <li><p><a href="https://github.com/Maschette/SOmap">SOmap</a> aims to provide straightforward mapping functions for Southern Ocean (polar stereographic) maps, along with commonly-used management and contextual layers such as MPA boundaries and ocean fronts.</p></li>
+    <li><p><a href="https://github.com/Maschette/SOmap">SOmap</a> is in development, but aims to provide straightforward mapping functions for Southern Ocean (polar stereographic) maps, along with commonly-used management and contextual layers such as MPA boundaries and ocean fronts.</p></li>
     <li><p><a href="https://github.com/SCAR/antanym">antanym</a> provides geographic place name data from the SCAR Composite Gazetteer of Antarctica, with plans to extend the coverage to subantarctic and informal gazetteers at a later date.</p></li>
     <li><p><pkg>orsifronts</pkg> provides the commonly-used Orsi et al. (1995) definitions of the major Southern Ocean fronts.</p></li>
     <li><p><pkg>graticule</pkg> creates graticule lines (lines of longitude and latitude) and labels for maps.</p></li>
     <li><p><pkg>palr</pkg> provides colour palettes for data, based on some well known remotely sensed data sets for sea ice concentration, sea surface temperature and chlorophyll-<em>a</em>.</p></li>
-    <li><p>there is some Antarctic-related mapping functionality in <a href="https://github.com/pierreroudier/prtools">prtools</a>, <a href="https://github.com/jiho/atlasr">atlasr</a>, and <a href="https://github.com/ccamlr/CCAMLRGIS">CCAMLRGIS</a>.</p></li>
+    <li><p>there is some Antarctic-related mapping functionality in <a href="https://github.com/pierreroudier/prtools">prtools</a>, <a href="https://github.com/jiho/atlasr">atlasr</a>, <a href="https://github.com/ccamlr/CCAMLRGIS">CCAMLRGIS</a>, and <a href="https://github.com/AustralianAntarcticDivision/sospatial">sospatial</a>.</p></li>
     </ul>
     <h3 id="environmental-data">Environmental Data</h3>
     <ul>
