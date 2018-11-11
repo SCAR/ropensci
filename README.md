@@ -10,16 +10,20 @@ Software development to support Antarctic data usage is growing, but still lags 
 
 ## Get involved
 
+Please get involved!
+
 - contribute your Antarctic R knowledge, your Antarctic [use case](https://discuss.ropensci.org/c/usecases) for a package, or ask a question in the dedicated [Antarctic and Southern Ocean](https://discuss.ropensci.org/c/antarctic) category of rOpenSci's discussion forum,
 
 - make [a suggestion](https://discuss.ropensci.org/c/antarctic) &mdash; perhaps for Antarctic-related functionality that you feel is missing from the current R ecosystem?
 
 - contribute an Antarctic R package, or improve the documentation or code of an existing one. See the [task view](https://github.com/SCAR/ropensci/tree/master/task_view) as a starting point,
 
-- join the #antarctic rOpenSci Slack channel for R users and developers &mdash; contact us at antarctic@ropensci.org for an invitation to join. Slack is a great space in which to have conversations with the rOpenSci community, or to give us feedback in a less-public manner,
+- join the #antarctic rOpenSci Slack channel for R users and developers &mdash; contact us at <antarctic@ropensci.org> for an invitation to join. Slack is a great space in which to have conversations with the rOpenSci community, or to give us feedback in a less-public manner,
 
 - participate in the [broader rOpenSci community](https://ropensci.org/community/). Follow on [Twitter](https://twitter.com/rOpenSci), read the [blog](https://ropensci.org/blog/), and check out the [ecosystem of R packages](https://ropensci.org/packages/).
 
+
+The administrative contacts for this initiative are Ben Raymond, Sara Labrousse, Michael Sumner, and Jess Melbourne-Thomas. Contact us via <antarctic@ropensci.org>, or find us on Slack or Twitter.
 
 ---
 
