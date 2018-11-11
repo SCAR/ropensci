@@ -61,10 +61,11 @@ the 180°E line, adding commonly-desired features such as ocean fronts,
 management boundaries, sea ice extent, stations and other geographic
 features, and common contextual layers such as bathymetry.
 
-  - [SOmap](https://github.com/Maschette/SOmap) is in development, but
-    aims to provide straightforward mapping functions for Southern Ocean
-    (polar stereographic) maps, along with commonly-used management and
-    contextual layers such as MPA boundaries and ocean fronts.
+  - [SOmap](https://github.com/AustralianAntarcticDivision/SOmap) is in
+    development, but aims to provide straightforward mapping functions
+    for Southern Ocean (polar stereographic) maps, along with
+    commonly-used management and contextual layers such as MPA
+    boundaries and ocean fronts.
 
   - [antanym](https://github.com/SCAR/antanym) provides geographic place
     name data from the SCAR Composite Gazetteer of Antarctica, with
