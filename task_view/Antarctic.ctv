@@ -2,7 +2,7 @@
   <name>Antarctic</name>
   <topic>Antarctic and Southern Ocean Science</topic>
   <maintainer email="ben.raymond@aad.gov.au">Ben Raymond</maintainer>
-  <version>2018-10-29</version>
+  <version>2018-11-14</version>
   <info>
     <p>This article is about R packages that are relevant to Antarctic and Southern Ocean science. It includes packages in various states of maturity, including some in planning or very early stages of development.</p>
     <p>Antarctic and Southern Ocean science covers a diverse range of topics within the geosciences, life sciences, physical sciences, and humanities and social sciences. This article is not intended to be an exhaustive list of packages that are relevant to all of those fields, but rather a synopsis of packages that are for one reason or another of particular interest to Antarctic and Southern Ocean researchers. The definition of “particular interest” is of course largely arbitrary. Packages listed here are generally expected to be at a useful stage of development, or if not, are seeking engagement/input from the wider community.</p>
@@ -31,10 +31,10 @@
     <li><p><a href="https://github.com/AustralianAntarcticDivision/blueant">blueant</a> and its companion package <a href="https://github.com/AustralianAntarcticDivision/bowerbird">bowerbird</a> provide a mechanism to download a range of environmental data including satellite-derived sea ice, sea surface temperature, topography, ocean colour (chlorophyll-<em>a</em>), and meteorological data from various providers. Many of these data sets can be read and manipulated with <pkg>raster</pkg> and similar packages: the <a href="https://cran.r-project.org/web/views/Spatial.html">spatial task view</a> is a good resource here.</p></li>
     <li><p><pkg>rsoi</pkg> downloads the most up to date Southern Oscillation Index, Oceanic Nino Index, and North Pacific Gyre Oscillation data.</p></li>
     </ul>
-    <h3 id="ocean-colour">Ocean Colour</h3>
-    <p>Satellite reflectance data are a common basis for estimating chlorophyll-<em>a</em> and other phytoplankton parameters at ocean-basin scales. Global products are widely available; however, Southern-Ocean specific algorithms are likely to provide better estimates in these regions.</p>
+    <h3 id="oceanography">Oceanography</h3>
     <ul>
-    <li><a href="https://github.com/sosoc/croc">croc</a> implements the Johnson et al. (2013) Southern Ocean algorithm.</li>
+    <li><p>satellite reflectance data are a common basis for estimating chlorophyll-<em>a</em> and other phytoplankton parameters at ocean-basin scales. Global products are widely available; however, Southern-Ocean specific algorithms are likely to provide better estimates in these regions. <a href="https://github.com/sosoc/croc">croc</a> implements the Johnson et al. (2013) Southern Ocean algorithm.</p></li>
+    <li><p>more broadly, <pkg>oce</pkg> provides a wide range of tools for reading, processing, and displaying oceanographic data, including measurements from Argo floats and CTD casts, sectional data, sea-level time series, and coastline and topographic data.</p></li>
     </ul>
     <h3 id="biodiversity-data">Biodiversity data</h3>
     <ul>
@@ -56,6 +56,7 @@
   </info>
   <packagelist>
     <pkg>graticule</pkg>
+    <pkg>oce</pkg>
     <pkg>orsifronts</pkg>
     <pkg>palr</pkg>
     <pkg>raster</pkg>

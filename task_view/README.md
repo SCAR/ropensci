@@ -107,16 +107,20 @@ features, and common contextual layers such as bathymetry.
     Southern Oscillation Index, Oceanic Nino Index, and North Pacific
     Gyre Oscillation data.
 
-### Ocean Colour
+### Oceanography
 
-Satellite reflectance data are a common basis for estimating
-chlorophyll- *a* and other phytoplankton parameters at ocean-basin
-scales. Global products are widely available; however, Southern-Ocean
-specific algorithms are likely to provide better estimates in these
-regions.
+  - satellite reflectance data are a common basis for estimating
+    chlorophyll- *a* and other phytoplankton parameters at ocean-basin
+    scales. Global products are widely available; however,
+    Southern-Ocean specific algorithms are likely to provide better
+    estimates in these regions. [croc](https://github.com/sosoc/croc)
+    implements the Johnson et al. (2013) Southern Ocean algorithm.
 
-  - [croc](https://github.com/sosoc/croc) implements the Johnson et al.
-    (2013) Southern Ocean algorithm.
+  - more broadly, [oce](https://cran.rstudio.com/web/packages/oce/index.html) provides a wide
+    range of tools for reading, processing, and displaying oceanographic
+    data, including measurements from Argo floats and CTD casts,
+    sectional data, sea-level time series, and coastline and topographic
+    data.
 
 ### Biodiversity data
 
@@ -166,6 +170,7 @@ category.
 ### CRAN packages:
 
   - [graticule](https://cran.rstudio.com/web/packages/graticule/index.html)
+  - [oce](https://cran.rstudio.com/web/packages/oce/index.html)
   - [orsifronts](https://cran.rstudio.com/web/packages/orsifronts/index.html)
   - [palr](https://cran.rstudio.com/web/packages/palr/index.html)
   - [raster](https://cran.rstudio.com/web/packages/raster/index.html)
