@@ -103,6 +103,12 @@ features, and common contextual layers such as bathymetry.
     view](https://cran.r-project.org/web/views/Spatial.html) is a good
     resource here.
 
+  - the [PolarWatch](https://polarwatch.noaa.gov/) project aims to
+    enable data discovery and broader use of high-latitude ocean remote
+    sensing data sets. The dedicated ERDDAP server
+    (https://polarwatch.noaa.gov/erddap) is accessible to R users with
+    [rerddap](https://cran.rstudio.com/web/packages/rerddap/index.html).
+
   - [rsoi](https://cran.rstudio.com/web/packages/rsoi/index.html) downloads the most up to date
     Southern Oscillation Index, Oceanic Nino Index, and North Pacific
     Gyre Oscillation data.
@@ -174,6 +180,7 @@ category.
   - [orsifronts](https://cran.rstudio.com/web/packages/orsifronts/index.html)
   - [palr](https://cran.rstudio.com/web/packages/palr/index.html)
   - [raster](https://cran.rstudio.com/web/packages/raster/index.html)
+  - [rerddap](https://cran.rstudio.com/web/packages/rerddap/index.html)
   - [rgbif](https://cran.rstudio.com/web/packages/rgbif/index.html)
   - [robis](https://cran.rstudio.com/web/packages/robis/index.html)
   - [rsoi](https://cran.rstudio.com/web/packages/rsoi/index.html)

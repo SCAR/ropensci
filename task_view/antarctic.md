@@ -39,6 +39,8 @@ Mapping is a very common task, and in an Antarctic/Southern Ocean context brings
 
 - [blueant](https://github.com/AustralianAntarcticDivision/blueant) and its companion package [bowerbird](https://github.com/AustralianAntarcticDivision/bowerbird) provide a mechanism to download a range of environmental data including satellite-derived sea ice, sea surface temperature, topography, ocean colour (chlorophyll-*a*), and meteorological data from various providers. Many of these data sets can be read and manipulated with <pkg>raster</pkg> and similar packages: the [spatial task view](https://cran.r-project.org/web/views/Spatial.html) is a good resource here.
 
+- the [PolarWatch](https://polarwatch.noaa.gov/) project aims to enable data discovery and broader use of high-latitude ocean remote sensing data sets. The dedicated ERDDAP server (https://polarwatch.noaa.gov/erddap) is accessible to R users with <pkg>rerddap</pkg>.
+
 - <pkg>rsoi</pkg> downloads the most up to date Southern Oscillation Index, Oceanic Nino Index, and North Pacific Gyre Oscillation data.
 
 
