@@ -25,6 +25,8 @@ Please get involved!
 
 The administrative contacts for this initiative are Ben Raymond, Sara Labrousse, Michael Sumner, and Jess Melbourne-Thomas. Contact us via <antarctic@ropensci.org>, or find us on Slack or Twitter.
 
+See also [this blog post](https://ropensci.org/blog/2018/11/13/antarctic/) which includes a short demonstration of a few early packages from this community.
+
 ---
 
 <div style="width:30%; margin-left:auto; margin-right:auto;">
