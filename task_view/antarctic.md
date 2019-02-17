@@ -50,6 +50,8 @@ Mapping is a very common task, and in an Antarctic/Southern Ocean context brings
 
 - more broadly, <pkg>oce</pkg> provides a wide range of tools for reading, processing, and displaying oceanographic data, including measurements from Argo floats and CTD casts, sectional data, sea-level time series, and coastline and topographic data.
 
+- [fda.oce](https://github.com/EPauthenet/fda.oce) provides functional data analysis of oceanographic profiles for front detection, water mass identification, unsupervised or supervised classification, model comparison, data calibration, and more.
+
 ### Biodiversity data
 
 - <pkg>robis</pkg> for marine data, <pkg>rgbif</pkg> for global biodiversity data. <pkg>spocc</pkg> wraps these and other occurrence data providers with a consistent interface (but not necessarily the full functionality of provider-specific packages, where they exist).

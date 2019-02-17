@@ -128,6 +128,11 @@ features, and common contextual layers such as bathymetry.
     sectional data, sea-level time series, and coastline and topographic
     data.
 
+  - [fda.oce](https://github.com/EPauthenet/fda.oce) provides functional
+    data analysis of oceanographic profiles for front detection, water
+    mass identification, unsupervised or supervised classification,
+    model comparison, data calibration, and more.
+
 ### Biodiversity data
 
   - [robis](https://cran.rstudio.com/web/packages/robis/index.html) for marine data,
