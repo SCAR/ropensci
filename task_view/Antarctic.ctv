@@ -2,7 +2,7 @@
   <name>Antarctic</name>
   <topic>Antarctic and Southern Ocean Science</topic>
   <maintainer email="ben.raymond@aad.gov.au">Ben Raymond</maintainer>
-  <version>2019-02-18</version>
+  <version>2020-05-14</version>
   <info>
     <p>This article is about R packages that are relevant to Antarctic and Southern Ocean science. It includes packages in various states of maturity, including some in planning or very early stages of development.</p>
     <p>Antarctic and Southern Ocean science covers a diverse range of topics within the geosciences, life sciences, physical sciences, and humanities and social sciences. This article is not intended to be an exhaustive list of packages that are relevant to all of those fields, but rather a synopsis of packages that are for one reason or another of particular interest to Antarctic and Southern Ocean researchers. The definition of “particular interest” is of course largely arbitrary. Packages listed here are generally expected to be at a useful stage of development, or if not, are seeking engagement/input from the wider community.</p>
@@ -21,9 +21,12 @@
     <ul>
     <li><p><a href="https://github.com/AustralianAntarcticDivision/SOmap">SOmap</a> is in development, but aims to provide straightforward mapping functions for Southern Ocean (polar stereographic) maps, along with commonly-used management and contextual layers such as MPA boundaries and ocean fronts.</p></li>
     <li><p><a href="https://github.com/SCAR/antanym">antanym</a> provides geographic place name data from the SCAR Composite Gazetteer of Antarctica, with plans to extend the coverage to subantarctic and informal gazetteers at a later date.</p></li>
-    <li><p><pkg>orsifronts</pkg> provides the commonly-used Orsi et al. (1995) definitions of the major Southern Ocean fronts.</p></li>
+    <li><p><pkg>orsifronts</pkg> provides the commonly-used Orsi et al. (1995) definitions of the major Southern Ocean fronts.</p></li>
     <li><p><pkg>graticule</pkg> creates graticule lines (lines of longitude and latitude) and labels for maps.</p></li>
-    <li><p><pkg>palr</pkg> provides colour palettes for data, based on some well known remotely sensed data sets for sea ice concentration, sea surface temperature and chlorophyll-<em>a</em>.</p></li>
+    <li><p><pkg>palr</pkg> provides colour palettes for data, based on some well known remotely sensed data sets for sea ice concentration, sea surface temperature and chlorophyll-<em>a</em>. Provides functions to convert raster <em>data</em> to raster <em>imagery</em> based on palette-mapping.</p></li>
+    <li><p><pkg>anglr</pkg> Gives direct access to generic 3D tools and provides a full suite of mesh-creation and 3D plotting functions. Suitable for use with a wide variety of spatial data including raster elevation models, trajectory data, polygonal surfaces, climate model output, and aerial photography.</p></li>
+    <li><p><pkg>ceramic</pkg> Download imagery tiles to a standard cache and load the data into raster objects, allows direct access to elevation data and satellite imagery for large areas at low resolution. (Very high resolution is available in <em>terrestrial</em> areas, but mostly only at lower latitudes).</p></li>
+    <li><p><pkg>reproj</pkg> Transform coordinates from a specified source to a specified target map projection. Suitable for use on generic data structures, or for creating custom transformation functions for formats not supported by mainstream tools.</p></li>
     <li><p>there is some Antarctic-related mapping functionality in <a href="https://github.com/pierreroudier/prtools">prtools</a>, <a href="https://github.com/jiho/atlasr">atlasr</a>, <a href="https://github.com/ccamlr/CCAMLRGIS">CCAMLRGIS</a>, and <a href="https://github.com/AustralianAntarcticDivision/sospatial">sospatial</a>.</p></li>
     </ul>
     <h3 id="environmental-data">Environmental Data</h3>
@@ -34,34 +37,43 @@
     </ul>
     <h3 id="oceanography">Oceanography</h3>
     <ul>
-    <li><p>satellite reflectance data are a common basis for estimating chlorophyll-<em>a</em> and other phytoplankton parameters at ocean-basin scales. Global products are widely available; however, Southern-Ocean specific algorithms are likely to provide better estimates in these regions. <a href="https://github.com/sosoc/croc">croc</a> implements the Johnson et al. (2013) Southern Ocean algorithm.</p></li>
+    <li><p>satellite reflectance data are a common basis for estimating chlorophyll-<em>a</em> and other phytoplankton parameters at ocean-basin scales. Global products are widely available; however, Southern-Ocean specific algorithms are likely to provide better estimates in these regions. <a href="https://github.com/sosoc/croc">croc</a> implements the Johnson et al. (2013) Southern Ocean algorithm.</p></li>
     <li><p>more broadly, <pkg>oce</pkg> provides a wide range of tools for reading, processing, and displaying oceanographic data, including measurements from Argo floats and CTD casts, sectional data, sea-level time series, and coastline and topographic data.</p></li>
     <li><p><a href="https://github.com/EPauthenet/fda.oce">fda.oce</a> provides functional data analysis of oceanographic profiles for front detection, water mass identification, unsupervised or supervised classification, model comparison, data calibration, and more.</p></li>
     </ul>
     <h3 id="biodiversity-data">Biodiversity data</h3>
     <ul>
     <li><p><pkg>robis</pkg> for marine data, <pkg>rgbif</pkg> for global biodiversity data. <pkg>spocc</pkg> wraps these and other occurrence data providers with a consistent interface (but not necessarily the full functionality of provider-specific packages, where they exist).</p></li>
+    <li><p><pkg>rbgm</pkg> Facilities for working with box-geometry model (BGM) files of the Atlantis whole-of-ecosystem model. Functions to read from BGM files directly, preserving internal topology, as well as helper functions to generate spatial data from these mesh forms.</p></li>
     <li><p><a href="https://github.com/iobis/obistools">obistools</a> and <pkg>scrubr</pkg> for quality-checking occurrence data.</p></li>
     <li><p>a package for the data behind the <a href="http://www.penguinmap.com/">Mapping Application for Penguin Populations and Projected Dynamics (MAPPPD)</a> is in planning: contact <a href="mailto:grwhumphries@blackbawks.net">Grant Humphries</a>.</p></li>
     <li><p>diet data <a href="https://github.com/SCAR/sohungry">sohungry</a> and allometric equations <a href="https://github.com/SCAR/solong">solong</a></p></li>
     </ul>
     <h3 id="animal-tracking">Animal tracking</h3>
-    <p>Tracking of animals using satellite, GPS, or light-level geolocation tags is common, and there are many R packages that can help with this. See the <a href="https://cloud.r-project.org/web/views/SpatioTemporal.html">spatiotemporal task view</a> for a more complete list. Of particular interest may be:</p>
+    <p>Tracking of animals using satellite, GPS, or light-level geolocation tags is common, and there are many R packages that can help with this. See the <a href="https://cloud.r-project.org/web/views/Tracking.html">tracking task view</a> for a more complete list. Of particular interest may be:</p>
+    <p><pkg>traipse</pkg> A collection of commonly used tools for animal movement and other tracking data. Variously distance, angle, bearing, distance-to, bearing-to and speed are provided for geographic data that can be used directly or within ‘tidyverse’ syntax.</p>
     <ul>
     <li><a href="https://github.com/ABindoff/TwilightFree">TwilightFree</a> provides a method for processing light-level geolocation data that is robust to noise (sensor shading and obscuration) and may be particularly suitable for Southern Ocean applications.</li>
     </ul>
     <h3 id="miscellaneous">Miscellaneous</h3>
     <p>Packages that may be of interest but don’t yet fit neatly into another category.</p>
     <ul>
-    <li><a href="https://github.com/mdsumner/distancetocoast">distancetocoast</a> provides “distance to coastline” data for longitude and latitude coordinates.</li>
+    <li><p><a href="https://github.com/mdsumner/distancetocoast">distancetocoast</a> provides “distance to coastline” data for longitude and latitude coordinates.</p></li>
+    <li><p><pkg>lazyraster</pkg> Read raster data at a specified resolution on-demand. Provides very quick ‘overview’ access to very large raster data sets, by specifying a region of interest and/or an output grid size.</p></li>
+    <li><p><pkg>tidync</pkg> Tidy tools to explore the contents of ‘NetCDF’ file or URL, presented as variables organized by grid with a database-like interface.</p></li>
     </ul>
   </info>
   <packagelist>
+    <pkg>anglr</pkg>
+    <pkg>ceramic</pkg>
     <pkg>graticule</pkg>
+    <pkg>lazyraster</pkg>
     <pkg>oce</pkg>
     <pkg>orsifronts</pkg>
     <pkg>palr</pkg>
     <pkg>raster</pkg>
+    <pkg>rbgm</pkg>
+    <pkg>reproj</pkg>
     <pkg>rerddap</pkg>
     <pkg>rgbif</pkg>
     <pkg>robis</pkg>
@@ -69,6 +81,8 @@
     <pkg>scrubr</pkg>
     <pkg>spocc</pkg>
     <pkg>taxize</pkg>
+    <pkg>tidync</pkg>
+    <pkg>traipse</pkg>
     <pkg>worrms</pkg>
   </packagelist>
   <links>

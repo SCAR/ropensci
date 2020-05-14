@@ -18,8 +18,8 @@ here are generally expected to be at a useful stage of development, or
 if not, are seeking engagement/input from the wider community.
 
 Contributions are welcome\! Please [submit an
-issue](https://github.com/SCAR/ropensci/issues), or make a contribution
-(see the [contribution guidelines](CONTRIBUTING.md)). If you have an
+issue](https://github.com/SCAR/ropensci/issues) , or make a contribution
+(see the [contribution guidelines](CONTRIBUTING.md) ). If you have an
 issue with one of the packages discussed below, please contact the
 maintainer of that package.
 
@@ -50,7 +50,7 @@ development for working with RAS (visualising and predicting the growth
 in taxonomic diversity over time).
 
 For more detail on R packages dealing with taxonomy in general, see the
-[rOpenSci taxonomy task view](https://github.com/ropensci/taxonomy).
+[rOpenSci taxonomy task view](https://github.com/ropensci/taxonomy) .
 
 ### Mapping
 
@@ -73,7 +73,7 @@ features, and common contextual layers such as bathymetry.
     at a later date.
 
   - [orsifronts](https://cran.rstudio.com/web/packages/orsifronts/index.html) provides the
-    commonly-used Orsi et al. (1995) definitions of the major Southern
+    commonly-used Orsi et al. (1995) definitions of the major Southern
     Ocean fronts.
 
   - [graticule](https://cran.rstudio.com/web/packages/graticule/index.html) creates graticule
@@ -82,12 +82,33 @@ features, and common contextual layers such as bathymetry.
   - [palr](https://cran.rstudio.com/web/packages/palr/index.html) provides colour palettes for
     data, based on some well known remotely sensed data sets for sea ice
     concentration, sea surface temperature and chlorophyll- *a* .
+    Provides functions to convert raster *data* to raster *imagery*
+    based on palette-mapping.
+
+  - [anglr](https://cran.rstudio.com/web/packages/anglr/index.html) Gives direct access to generic
+    3D tools and provides a full suite of mesh-creation and 3D plotting
+    functions. Suitable for use with a wide variety of spatial data
+    including raster elevation models, trajectory data, polygonal
+    surfaces, climate model output, and aerial photography.
+
+  - [ceramic](https://cran.rstudio.com/web/packages/ceramic/index.html) Download imagery tiles to
+    a standard cache and load the data into raster objects, allows
+    direct access to elevation data and satellite imagery for large
+    areas at low resolution. (Very high resolution is available in
+    *terrestrial* areas, but mostly only at lower latitudes).
+
+  - [reproj](https://cran.rstudio.com/web/packages/reproj/index.html) Transform coordinates from a
+    specified source to a specified target map projection. Suitable for
+    use on generic data structures, or for creating custom
+    transformation functions for formats not supported by mainstream
+    tools.
 
   - there is some Antarctic-related mapping functionality in
-    [prtools](https://github.com/pierreroudier/prtools),
-    [atlasr](https://github.com/jiho/atlasr),
-    [CCAMLRGIS](https://github.com/ccamlr/CCAMLRGIS), and
-    [sospatial](https://github.com/AustralianAntarcticDivision/sospatial).
+    [prtools](https://github.com/pierreroudier/prtools) ,
+    [atlasr](https://github.com/jiho/atlasr) ,
+    [CCAMLRGIS](https://github.com/ccamlr/CCAMLRGIS) , and
+    [sospatial](https://github.com/AustralianAntarcticDivision/sospatial)
+    .
 
 ### Environmental Data
 
@@ -120,7 +141,7 @@ features, and common contextual layers such as bathymetry.
     scales. Global products are widely available; however,
     Southern-Ocean specific algorithms are likely to provide better
     estimates in these regions. [croc](https://github.com/sosoc/croc)
-    implements the Johnson et al. (2013) Southern Ocean algorithm.
+    implements the Johnson et al. (2013) Southern Ocean algorithm.
 
   - more broadly, [oce](https://cran.rstudio.com/web/packages/oce/index.html) provides a wide
     range of tools for reading, processing, and displaying oceanographic
@@ -142,6 +163,12 @@ features, and common contextual layers such as bathymetry.
     necessarily the full functionality of provider-specific packages,
     where they exist).
 
+  - [rbgm](https://cran.rstudio.com/web/packages/rbgm/index.html) Facilities for working with
+    box-geometry model (BGM) files of the Atlantis whole-of-ecosystem
+    model. Functions to read from BGM files directly, preserving
+    internal topology, as well as helper functions to generate spatial
+    data from these mesh forms.
+
   - [obistools](https://github.com/iobis/obistools) and
     [scrubr](https://cran.rstudio.com/web/packages/scrubr/index.html) for quality-checking
     occurrence data.
@@ -149,7 +176,7 @@ features, and common contextual layers such as bathymetry.
   - a package for the data behind the [Mapping Application for Penguin
     Populations and Projected Dynamics
     (MAPPPD)](http://www.penguinmap.com/) is in planning: contact [Grant
-    Humphries](mailto:grwhumphries@blackbawks.net).
+    Humphries](mailto:grwhumphries@blackbawks.net) .
 
   - diet data [sohungry](https://github.com/SCAR/sohungry) and
     allometric equations [solong](https://github.com/SCAR/solong)
@@ -158,9 +185,14 @@ features, and common contextual layers such as bathymetry.
 
 Tracking of animals using satellite, GPS, or light-level geolocation
 tags is common, and there are many R packages that can help with this.
-See the [spatiotemporal task
-view](https://cloud.r-project.org/web/views/SpatioTemporal.html) for a
-more complete list. Of particular interest may be:
+See the [tracking task
+view](https://cloud.r-project.org/web/views/Tracking.html) for a more
+complete list. Of particular interest may be:
+
+[traipse](https://cran.rstudio.com/web/packages/traipse/index.html) A collection of commonly used
+tools for animal movement and other tracking data. Variously distance,
+angle, bearing, distance-to, bearing-to and speed are provided for
+geographic data that can be used directly or within ‘tidyverse’ syntax.
 
   - [TwilightFree](https://github.com/ABindoff/TwilightFree) provides a
     method for processing light-level geolocation data that is robust to
@@ -176,15 +208,29 @@ category.
     provides “distance to coastline” data for longitude and latitude
     coordinates.
 
+  - [lazyraster](https://cran.rstudio.com/web/packages/lazyraster/index.html) Read raster data at
+    a specified resolution on-demand. Provides very quick ‘overview’
+    access to very large raster data sets, by specifying a region of
+    interest and/or an output grid size.
+
+  - [tidync](https://cran.rstudio.com/web/packages/tidync/index.html) Tidy tools to explore the
+    contents of ‘NetCDF’ file or URL, presented as variables organized
+    by grid with a database-like interface.
+
 </div>
 
 ### CRAN packages:
 
+  - [anglr](https://cran.rstudio.com/web/packages/anglr/index.html)
+  - [ceramic](https://cran.rstudio.com/web/packages/ceramic/index.html)
   - [graticule](https://cran.rstudio.com/web/packages/graticule/index.html)
+  - [lazyraster](https://cran.rstudio.com/web/packages/lazyraster/index.html)
   - [oce](https://cran.rstudio.com/web/packages/oce/index.html)
   - [orsifronts](https://cran.rstudio.com/web/packages/orsifronts/index.html)
   - [palr](https://cran.rstudio.com/web/packages/palr/index.html)
   - [raster](https://cran.rstudio.com/web/packages/raster/index.html)
+  - [rbgm](https://cran.rstudio.com/web/packages/rbgm/index.html)
+  - [reproj](https://cran.rstudio.com/web/packages/reproj/index.html)
   - [rerddap](https://cran.rstudio.com/web/packages/rerddap/index.html)
   - [rgbif](https://cran.rstudio.com/web/packages/rgbif/index.html)
   - [robis](https://cran.rstudio.com/web/packages/robis/index.html)
@@ -192,6 +238,8 @@ category.
   - [scrubr](https://cran.rstudio.com/web/packages/scrubr/index.html)
   - [spocc](https://cran.rstudio.com/web/packages/spocc/index.html)
   - [taxize](https://cran.rstudio.com/web/packages/taxize/index.html)
+  - [tidync](https://cran.rstudio.com/web/packages/tidync/index.html)
+  - [traipse](https://cran.rstudio.com/web/packages/traipse/index.html)
   - [worrms](https://cran.rstudio.com/web/packages/worrms/index.html)
 
 ### Related links:
