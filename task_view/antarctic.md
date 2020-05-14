@@ -23,7 +23,7 @@ For more detail on R packages dealing with taxonomy in general, see the [rOpenSc
 
 Mapping is a very common task, and in an Antarctic/Southern Ocean context brings with it particular issues including dealing with projection properties at high latitudes, coping with data that crosses the 180&deg;E line, adding commonly-desired features such as ocean fronts, management boundaries, sea ice extent, stations and other geographic features, and common contextual layers such as bathymetry.
 
-- [SOmap](https://github.com/AustralianAntarcticDivision/SOmap) is in development, but aims to provide straightforward mapping functions for Southern Ocean (polar stereographic) maps, along with commonly-used management and contextual layers such as MPA boundaries and ocean fronts.
+- [SOmap](https://github.com/AustralianAntarcticDivision/SOmap) is in development, but aims to provide straightforward mapping functions for Southern Ocean (polar stereographic) maps, along with commonly-used management and contextual layers such as MPA boundaries and ocean fronts. 
 
 - [antanym](https://github.com/SCAR/antanym) provides geographic place name data from the SCAR Composite Gazetteer of Antarctica, with plans to extend the coverage to subantarctic and informal gazetteers at a later date.
 
@@ -31,7 +31,14 @@ Mapping is a very common task, and in an Antarctic/Southern Ocean context brings
 
 - <pkg>graticule</pkg> creates graticule lines (lines of longitude and latitude) and labels for maps.
 
-- <pkg>palr</pkg> provides colour palettes for data, based on some well known remotely sensed data sets for sea ice concentration, sea surface temperature and chlorophyll-*a*.
+- <pkg>palr</pkg> provides colour palettes for data, based on some well known remotely sensed data sets for sea ice concentration, sea surface temperature and chlorophyll-*a*. Provides functions to convert raster *data* to raster *imagery*
+based on palette-mapping. 
+
+- <pkg>anglr</pkg> Gives direct access to generic 3D tools and provides a full suite of mesh-creation and 3D plotting functions. Suitable for use with a wide variety of spatial data including raster elevation models, trajectory data, polygonal surfaces, climate model output, and aerial photography. 
+
+- <pkg>ceramic</pkg> Download imagery tiles to a standard cache and load the data into raster objects, allows direct access to elevation data and satellite imagery for large areas at low resolution. (Very high resolution is available in *terrestrial* areas, but mostly only at lower latitudes).  
+
+- <pkg>reproj</pkg> Transform coordinates from a specified source to a specified target map projection. Suitable for use on generic data structures, or for creating custom transformation functions for formats not supported by mainstream tools. 
 
 - there is some Antarctic-related mapping functionality in [prtools](https://github.com/pierreroudier/prtools), [atlasr](https://github.com/jiho/atlasr), [CCAMLRGIS](https://github.com/ccamlr/CCAMLRGIS), and [sospatial](https://github.com/AustralianAntarcticDivision/sospatial).
 
@@ -74,3 +81,5 @@ Tracking of animals using satellite, GPS, or light-level geolocation tags is com
 Packages that may be of interest but don't yet fit neatly into another category.
 
 - [distancetocoast](https://github.com/mdsumner/distancetocoast) provides "distance to coastline" data for longitude and latitude coordinates.
+
+- <pkg>lazyraster</pkg> Read raster data at a specified resolution on-demand. Provides very quick 'overview' access to very large raster data sets, by specifying a region of interest and/or an output grid size. 
