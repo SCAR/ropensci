@@ -63,6 +63,8 @@ based on palette-mapping.
 
 - <pkg>robis</pkg> for marine data, <pkg>rgbif</pkg> for global biodiversity data. <pkg>spocc</pkg> wraps these and other occurrence data providers with a consistent interface (but not necessarily the full functionality of provider-specific packages, where they exist).
 
+- <pkg>rbgm</pkg> Facilities for working with box-geometry model (BGM) files of the Atlantis whole-of-ecosystem model. Functions to read from BGM files directly, preserving internal topology, as well as helper functions to generate spatial data from these mesh forms.
+
 - [obistools](https://github.com/iobis/obistools) and <pkg>scrubr</pkg> for quality-checking occurrence data.
 
 - a package for the data behind the [Mapping Application for Penguin Populations and Projected Dynamics (MAPPPD)](http://www.penguinmap.com/) is in planning: contact [Grant Humphries](mailto:grwhumphries@blackbawks.net).
@@ -71,8 +73,10 @@ based on palette-mapping.
 
 ### Animal tracking
 
-Tracking of animals using satellite, GPS, or light-level geolocation tags is common, and there are many R packages that can help with this. See the [spatiotemporal task view](https://cloud.r-project.org/web/views/SpatioTemporal.html) for a more complete list. Of particular interest may be:
+Tracking of animals using satellite, GPS, or light-level geolocation tags is common, and there are many R packages that can help with this. See the [tracking task view](https://cloud.r-project.org/web/views/Tracking.html) for a more complete list. Of particular interest may be:
 
+ <pkg>traipse</pkg> A collection of commonly used tools for animal movement and other tracking data. Variously distance, angle, bearing, distance-to, bearing-to and speed are provided for geographic data that can be used directly or within 'tidyverse' syntax.
+ 
 - [TwilightFree](https://github.com/ABindoff/TwilightFree) provides a method for processing light-level geolocation data that is robust to noise (sensor shading and obscuration) and may be particularly suitable for Southern Ocean applications.
 
 
@@ -83,3 +87,5 @@ Packages that may be of interest but don't yet fit neatly into another category.
 - [distancetocoast](https://github.com/mdsumner/distancetocoast) provides "distance to coastline" data for longitude and latitude coordinates.
 
 - <pkg>lazyraster</pkg> Read raster data at a specified resolution on-demand. Provides very quick 'overview' access to very large raster data sets, by specifying a region of interest and/or an output grid size. 
+
+- <pkg>tidync</pkg> Tidy tools to explore the contents of 'NetCDF' file or URL, presented as variables organized by grid with a database-like interface. 
