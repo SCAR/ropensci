@@ -79,7 +79,6 @@ Tracking of animals using satellite, GPS, or light-level geolocation tags is com
  
 - [TwilightFree](https://github.com/ABindoff/TwilightFree) provides a method for processing light-level geolocation data that is robust to noise (sensor shading and obscuration) and may be particularly suitable for Southern Ocean applications.
 
-
 ### Miscellaneous
 
 Packages that may be of interest but don't yet fit neatly into another category.

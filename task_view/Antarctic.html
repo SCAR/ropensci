@@ -6,11 +6,11 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="citation_title" content="CRAN Task View: Antarctic and Southern Ocean Science">
 <meta name="citation_author" content="Ben Raymond">
-<meta name="citation_publication_date" content="2019-02-18">
+<meta name="citation_publication_date" content="2020-05-14">
 <meta name="citation_public_url" content="https://CRAN.R-project.org/view=Antarctic">
 <meta name="DC.title" content="CRAN Task View: Antarctic and Southern Ocean Science">
 <meta name="DC.creator" content="Ben Raymond">
-<meta name="DC.issued" content="2019-02-18">
+<meta name="DC.issued" content="2020-05-14">
 <meta name="DC.identifier" content="https://CRAN.R-project.org/view=Antarctic">
 </head>
 <body>
@@ -95,7 +95,7 @@
         <li>
           <p>
 <a href="../packages/orsifronts/index.html">orsifronts</a>
-            provides the commonly-used Orsi et al. (1995) definitions of the major Southern Ocean fronts.
+            provides the commonly-used Orsi et al. (1995) definitions of the major Southern Ocean fronts.
           </p>
         </li>
         <li>
@@ -110,7 +110,37 @@
             provides colour palettes for data, based on some well known remotely sensed data sets for sea ice concentration, sea surface temperature and chlorophyll-
             <em>
               a
-            </em>.
+            </em>. Provides functions to convert raster
+            <em>
+              data
+            </em>
+            to raster
+            <em>
+              imagery
+            </em>
+            based on palette-mapping.
+          </p>
+        </li>
+        <li>
+          <p>
+<a href="../packages/anglr/index.html">anglr</a>
+            Gives direct access to generic 3D tools and provides a full suite of mesh-creation and 3D plotting functions. Suitable for use with a wide variety of spatial data including raster elevation models, trajectory data, polygonal surfaces, climate model output, and aerial photography.
+          </p>
+        </li>
+        <li>
+          <p>
+<a href="../packages/ceramic/index.html">ceramic</a>
+            Download imagery tiles to a standard cache and load the data into raster objects, allows direct access to elevation data and satellite imagery for large areas at low resolution. (Very high resolution is available in
+            <em>
+              terrestrial
+            </em>
+            areas, but mostly only at lower latitudes).
+          </p>
+        </li>
+        <li>
+          <p>
+<a href="../packages/reproj/index.html">reproj</a>
+            Transform coordinates from a specified source to a specified target map projection. Suitable for use on generic data structures, or for creating custom transformation functions for formats not supported by mainstream tools.
           </p>
         </li>
         <li>
@@ -187,7 +217,7 @@
             <a href="https://github.com/sosoc/croc">
               croc
             </a>
-            implements the Johnson et al. (2013) Southern Ocean algorithm.
+            implements the Johnson et al. (2013) Southern Ocean algorithm.
           </p>
         </li>
         <li>
@@ -218,6 +248,12 @@
             for global biodiversity data.
 <a href="../packages/spocc/index.html">spocc</a>
             wraps these and other occurrence data providers with a consistent interface (but not necessarily the full functionality of provider-specific packages, where they exist).
+          </p>
+        </li>
+        <li>
+          <p>
+<a href="../packages/rbgm/index.html">rbgm</a>
+            Facilities for working with box-geometry model (BGM) files of the Atlantis whole-of-ecosystem model. Functions to read from BGM files directly, preserving internal topology, as well as helper functions to generate spatial data from these mesh forms.
           </p>
         </li>
         <li>
@@ -260,10 +296,14 @@
       </h3>
       <p>
         Tracking of animals using satellite, GPS, or light-level geolocation tags is common, and there are many R packages that can help with this. See the
-        <a href="https://cloud.r-project.org/web/views/SpatioTemporal.html">
-          spatiotemporal task view
+        <a href="https://cloud.r-project.org/web/views/Tracking.html">
+          tracking task view
         </a>
         for a more complete list. Of particular interest may be:
+      </p>
+      <p>
+<a href="../packages/traipse/index.html">traipse</a>
+        A collection of commonly used tools for animal movement and other tracking data. Variously distance, angle, bearing, distance-to, bearing-to and speed are provided for geographic data that can be used directly or within ‘tidyverse’ syntax.
       </p>
       <ul>
 <li>
@@ -281,21 +321,40 @@
       </p>
       <ul>
 <li>
-          <a href="https://github.com/mdsumner/distancetocoast">
-            distancetocoast
-          </a>
-          provides “distance to coastline” data for longitude and latitude coordinates.
+          <p>
+            <a href="https://github.com/mdsumner/distancetocoast">
+              distancetocoast
+            </a>
+            provides “distance to coastline” data for longitude and latitude coordinates.
+          </p>
+        </li>
+        <li>
+          <p>
+<a href="../packages/lazyraster/index.html">lazyraster</a>
+            Read raster data at a specified resolution on-demand. Provides very quick ‘overview’ access to very large raster data sets, by specifying a region of interest and/or an output grid size.
+          </p>
+        </li>
+        <li>
+          <p>
+<a href="../packages/tidync/index.html">tidync</a>
+            Tidy tools to explore the contents of ‘NetCDF’ file or URL, presented as variables organized by grid with a database-like interface.
+          </p>
         </li>
       </ul>
 </div>
 
   <h3>CRAN packages:</h3>
   <ul>
-<li><a href="../packages/graticule/index.html">graticule</a></li>
+<li><a href="../packages/anglr/index.html">anglr</a></li>
+    <li><a href="../packages/ceramic/index.html">ceramic</a></li>
+    <li><a href="../packages/graticule/index.html">graticule</a></li>
+    <li><a href="../packages/lazyraster/index.html">lazyraster</a></li>
     <li><a href="../packages/oce/index.html">oce</a></li>
     <li><a href="../packages/orsifronts/index.html">orsifronts</a></li>
     <li><a href="../packages/palr/index.html">palr</a></li>
     <li><a href="../packages/raster/index.html">raster</a></li>
+    <li><a href="../packages/rbgm/index.html">rbgm</a></li>
+    <li><a href="../packages/reproj/index.html">reproj</a></li>
     <li><a href="../packages/rerddap/index.html">rerddap</a></li>
     <li><a href="../packages/rgbif/index.html">rgbif</a></li>
     <li><a href="../packages/robis/index.html">robis</a></li>
@@ -303,6 +362,8 @@
     <li><a href="../packages/scrubr/index.html">scrubr</a></li>
     <li><a href="../packages/spocc/index.html">spocc</a></li>
     <li><a href="../packages/taxize/index.html">taxize</a></li>
+    <li><a href="../packages/tidync/index.html">tidync</a></li>
+    <li><a href="../packages/traipse/index.html">traipse</a></li>
     <li><a href="../packages/worrms/index.html">worrms</a></li>
   </ul>
 <h3>Related links:</h3>
