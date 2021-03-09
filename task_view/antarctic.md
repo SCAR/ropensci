@@ -68,6 +68,9 @@ Tracking of animals using satellite, GPS, or light-level geolocation tags is com
 
 - [TwilightFree](https://github.com/ABindoff/TwilightFree) provides a method for processing light-level geolocation data that is robust to noise (sensor shading and obscuration) and may be particularly suitable for Southern Ocean applications.
 
+- <pkg>foieGras</pkg> fits continuous-time random walk and correlated random walk state-space models to filter Argos satellite location data.
+
+- [availability](https://github.com/AustralianAntarcticDivision/availability) estimates the geographic space available to animals based on telemetry data.
 
 ### Miscellaneous
 

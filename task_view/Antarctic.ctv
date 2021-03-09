@@ -2,7 +2,7 @@
   <name>Antarctic</name>
   <topic>Antarctic and Southern Ocean Science</topic>
   <maintainer email="ben.raymond@aad.gov.au">Ben Raymond</maintainer>
-  <version>2019-02-18</version>
+  <version>2021-03-09</version>
   <info>
     <p>This article is about R packages that are relevant to Antarctic and Southern Ocean science. It includes packages in various states of maturity, including some in planning or very early stages of development.</p>
     <p>Antarctic and Southern Ocean science covers a diverse range of topics within the geosciences, life sciences, physical sciences, and humanities and social sciences. This article is not intended to be an exhaustive list of packages that are relevant to all of those fields, but rather a synopsis of packages that are for one reason or another of particular interest to Antarctic and Southern Ocean researchers. The definition of “particular interest” is of course largely arbitrary. Packages listed here are generally expected to be at a useful stage of development, or if not, are seeking engagement/input from the wider community.</p>
@@ -21,7 +21,7 @@
     <ul>
     <li><p><a href="https://github.com/AustralianAntarcticDivision/SOmap">SOmap</a> is in development, but aims to provide straightforward mapping functions for Southern Ocean (polar stereographic) maps, along with commonly-used management and contextual layers such as MPA boundaries and ocean fronts.</p></li>
     <li><p><a href="https://github.com/SCAR/antanym">antanym</a> provides geographic place name data from the SCAR Composite Gazetteer of Antarctica, with plans to extend the coverage to subantarctic and informal gazetteers at a later date.</p></li>
-    <li><p><pkg>orsifronts</pkg> provides the commonly-used Orsi et al. (1995) definitions of the major Southern Ocean fronts.</p></li>
+    <li><p><pkg>orsifronts</pkg> provides the commonly-used Orsi et al. (1995) definitions of the major Southern Ocean fronts.</p></li>
     <li><p><pkg>graticule</pkg> creates graticule lines (lines of longitude and latitude) and labels for maps.</p></li>
     <li><p><pkg>palr</pkg> provides colour palettes for data, based on some well known remotely sensed data sets for sea ice concentration, sea surface temperature and chlorophyll-<em>a</em>.</p></li>
     <li><p>there is some Antarctic-related mapping functionality in <a href="https://github.com/pierreroudier/prtools">prtools</a>, <a href="https://github.com/jiho/atlasr">atlasr</a>, <a href="https://github.com/ccamlr/CCAMLRGIS">CCAMLRGIS</a>, and <a href="https://github.com/AustralianAntarcticDivision/sospatial">sospatial</a>.</p></li>
@@ -34,7 +34,7 @@
     </ul>
     <h3 id="oceanography">Oceanography</h3>
     <ul>
-    <li><p>satellite reflectance data are a common basis for estimating chlorophyll-<em>a</em> and other phytoplankton parameters at ocean-basin scales. Global products are widely available; however, Southern-Ocean specific algorithms are likely to provide better estimates in these regions. <a href="https://github.com/sosoc/croc">croc</a> implements the Johnson et al. (2013) Southern Ocean algorithm.</p></li>
+    <li><p>satellite reflectance data are a common basis for estimating chlorophyll-<em>a</em> and other phytoplankton parameters at ocean-basin scales. Global products are widely available; however, Southern-Ocean specific algorithms are likely to provide better estimates in these regions. <a href="https://github.com/sosoc/croc">croc</a> implements the Johnson et al. (2013) Southern Ocean algorithm.</p></li>
     <li><p>more broadly, <pkg>oce</pkg> provides a wide range of tools for reading, processing, and displaying oceanographic data, including measurements from Argo floats and CTD casts, sectional data, sea-level time series, and coastline and topographic data.</p></li>
     <li><p><a href="https://github.com/EPauthenet/fda.oce">fda.oce</a> provides functional data analysis of oceanographic profiles for front detection, water mass identification, unsupervised or supervised classification, model comparison, data calibration, and more.</p></li>
     </ul>
@@ -48,7 +48,9 @@
     <h3 id="animal-tracking">Animal tracking</h3>
     <p>Tracking of animals using satellite, GPS, or light-level geolocation tags is common, and there are many R packages that can help with this. See the <a href="https://cloud.r-project.org/web/views/SpatioTemporal.html">spatiotemporal task view</a> for a more complete list. Of particular interest may be:</p>
     <ul>
-    <li><a href="https://github.com/ABindoff/TwilightFree">TwilightFree</a> provides a method for processing light-level geolocation data that is robust to noise (sensor shading and obscuration) and may be particularly suitable for Southern Ocean applications.</li>
+    <li><p><a href="https://github.com/ABindoff/TwilightFree">TwilightFree</a> provides a method for processing light-level geolocation data that is robust to noise (sensor shading and obscuration) and may be particularly suitable for Southern Ocean applications.</p></li>
+    <li><p><pkg>foieGras</pkg> fits continuous-time random walk and correlated random walk state-space models to filter Argos satellite location data.</p></li>
+    <li><p><a href="https://github.com/AustralianAntarcticDivision/availability">availability</a> estimates the geographic space available to animals based on telemetry data.</p></li>
     </ul>
     <h3 id="miscellaneous">Miscellaneous</h3>
     <p>Packages that may be of interest but don’t yet fit neatly into another category.</p>
@@ -57,6 +59,7 @@
     </ul>
   </info>
   <packagelist>
+    <pkg>foieGras</pkg>
     <pkg>graticule</pkg>
     <pkg>oce</pkg>
     <pkg>orsifronts</pkg>

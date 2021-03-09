@@ -18,8 +18,8 @@ here are generally expected to be at a useful stage of development, or
 if not, are seeking engagement/input from the wider community.
 
 Contributions are welcome\! Please [submit an
-issue](https://github.com/SCAR/ropensci/issues), or make a contribution
-(see the [contribution guidelines](CONTRIBUTING.md)). If you have an
+issue](https://github.com/SCAR/ropensci/issues) , or make a contribution
+(see the [contribution guidelines](CONTRIBUTING.md) ). If you have an
 issue with one of the packages discussed below, please contact the
 maintainer of that package.
 
@@ -50,7 +50,7 @@ development for working with RAS (visualising and predicting the growth
 in taxonomic diversity over time).
 
 For more detail on R packages dealing with taxonomy in general, see the
-[rOpenSci taxonomy task view](https://github.com/ropensci/taxonomy).
+[rOpenSci taxonomy task view](https://github.com/ropensci/taxonomy) .
 
 ### Mapping
 
@@ -73,7 +73,7 @@ features, and common contextual layers such as bathymetry.
     at a later date.
 
   - [orsifronts](https://cran.rstudio.com/web/packages/orsifronts/index.html) provides the
-    commonly-used Orsi et al. (1995) definitions of the major Southern
+    commonly-used Orsi et al. (1995) definitions of the major Southern
     Ocean fronts.
 
   - [graticule](https://cran.rstudio.com/web/packages/graticule/index.html) creates graticule
@@ -84,10 +84,11 @@ features, and common contextual layers such as bathymetry.
     concentration, sea surface temperature and chlorophyll- *a* .
 
   - there is some Antarctic-related mapping functionality in
-    [prtools](https://github.com/pierreroudier/prtools),
-    [atlasr](https://github.com/jiho/atlasr),
-    [CCAMLRGIS](https://github.com/ccamlr/CCAMLRGIS), and
-    [sospatial](https://github.com/AustralianAntarcticDivision/sospatial).
+    [prtools](https://github.com/pierreroudier/prtools) ,
+    [atlasr](https://github.com/jiho/atlasr) ,
+    [CCAMLRGIS](https://github.com/ccamlr/CCAMLRGIS) , and
+    [sospatial](https://github.com/AustralianAntarcticDivision/sospatial)
+    .
 
 ### Environmental Data
 
@@ -120,7 +121,7 @@ features, and common contextual layers such as bathymetry.
     scales. Global products are widely available; however,
     Southern-Ocean specific algorithms are likely to provide better
     estimates in these regions. [croc](https://github.com/sosoc/croc)
-    implements the Johnson et al. (2013) Southern Ocean algorithm.
+    implements the Johnson et al. (2013) Southern Ocean algorithm.
 
   - more broadly, [oce](https://cran.rstudio.com/web/packages/oce/index.html) provides a wide
     range of tools for reading, processing, and displaying oceanographic
@@ -149,7 +150,7 @@ features, and common contextual layers such as bathymetry.
   - a package for the data behind the [Mapping Application for Penguin
     Populations and Projected Dynamics
     (MAPPPD)](http://www.penguinmap.com/) is in planning: contact [Grant
-    Humphries](mailto:grwhumphries@blackbawks.net).
+    Humphries](mailto:grwhumphries@blackbawks.net) .
 
   - diet data [sohungry](https://github.com/SCAR/sohungry) and
     allometric equations [solong](https://github.com/SCAR/solong)
@@ -167,6 +168,14 @@ more complete list. Of particular interest may be:
     noise (sensor shading and obscuration) and may be particularly
     suitable for Southern Ocean applications.
 
+  - [foieGras](https://cran.rstudio.com/web/packages/foieGras/index.html) fits continuous-time
+    random walk and correlated random walk state-space models to filter
+    Argos satellite location data.
+
+  - [availability](https://github.com/AustralianAntarcticDivision/availability)
+    estimates the geographic space available to animals based on
+    telemetry data.
+
 ### Miscellaneous
 
 Packages that may be of interest but don’t yet fit neatly into another
@@ -180,6 +189,7 @@ category.
 
 ### CRAN packages:
 
+  - [foieGras](https://cran.rstudio.com/web/packages/foieGras/index.html)
   - [graticule](https://cran.rstudio.com/web/packages/graticule/index.html)
   - [oce](https://cran.rstudio.com/web/packages/oce/index.html)
   - [orsifronts](https://cran.rstudio.com/web/packages/orsifronts/index.html)
