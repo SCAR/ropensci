@@ -9,12 +9,10 @@ Many thanks to contributors, including Scott Chamberlain, Michael Sumner, Grant 
 
 ### Taxonomic Data
 
-The Register of Antarctic Marine Species (RAMS) is the authoritative taxonomic database for Antarctic marine organisms. RAMS is part of the World Register of Marine Species (WoRMS).
+The Register of Antarctic Species (RAS) is the authoritative taxonomic database for Antarctic organisms, both marine and terrestrial. It supersedes RAMS (the Register of Antarctic Marine Species). RAS is hosted within the same data infrastructure as the World Register of Marine Species (WoRMS), and so the `worrms` R package provides convenient access.
 
-- <pkg>worrms</pkg> client for the [WoRMS](http://www.marinespecies.org/) API. Contains mostly taxonomic data, but also trait data. 
+- <pkg>worrms</pkg> client for the [WoRMS](http://www.marinespecies.org/) API. Contains mostly taxonomic data, but also trait data. To include terrestrial taxa in your searches, set `marine_only = FALSE`.
 - <pkg>taxize</pkg> provides access to 20ish sources of taxonomic data sources, including WoRMS. It has consistent data outputs and function interfaces across the different data sources so that you don't need to tailor your code to different taxonomic data providers.
-
-RAMS is currently being extended to cover non-marine taxa, which will become the Register of Antarctic Species (RAS). Hopefully this will remain covered by `worrms` and the server-side infrastructure hosted by VLIZ. There is also the [biotaxa](https://github.com/hhsieh/biotaxa_Rpackage) package in development for working with RAS (visualising and predicting the growth in taxonomic diversity over time).
 
 For more detail on R packages dealing with taxonomy in general, see the [rOpenSci taxonomy task view](https://github.com/ropensci/taxonomy).
 
@@ -23,7 +21,9 @@ For more detail on R packages dealing with taxonomy in general, see the [rOpenSc
 
 Mapping is a very common task, and in an Antarctic/Southern Ocean context brings with it particular issues including dealing with projection properties at high latitudes, coping with data that crosses the 180&deg;E line, adding commonly-desired features such as ocean fronts, management boundaries, sea ice extent, stations and other geographic features, and common contextual layers such as bathymetry.
 
-- [SOmap](https://github.com/AustralianAntarcticDivision/SOmap) is in development, but aims to provide straightforward mapping functions for Southern Ocean (polar stereographic) maps, along with commonly-used management and contextual layers such as MPA boundaries and ocean fronts.
+- [SOmap](https://github.com/AustralianAntarcticDivision/SOmap) aims to provide straightforward mapping functions for Southern Ocean (polar stereographic) maps, along with commonly-used management and contextual layers such as MPA boundaries and ocean fronts.
+
+- <pkg>CCAMLRGIS</pkg> provides similar mapping outputs but focused on the CAMLR Convention Area.
 
 - [antanym](https://github.com/SCAR/antanym) provides geographic place name data from the SCAR Composite Gazetteer of Antarctica, with plans to extend the coverage to subantarctic and informal gazetteers at a later date.
 
@@ -33,16 +33,17 @@ Mapping is a very common task, and in an Antarctic/Southern Ocean context brings
 
 - <pkg>palr</pkg> provides colour palettes for data, based on some well known remotely sensed data sets for sea ice concentration, sea surface temperature and chlorophyll-*a*.
 
-- there is some Antarctic-related mapping functionality in [prtools](https://github.com/pierreroudier/prtools), [atlasr](https://github.com/jiho/atlasr), [CCAMLRGIS](https://github.com/ccamlr/CCAMLRGIS), and [sospatial](https://github.com/AustralianAntarcticDivision/sospatial).
+- there is (somewhat dated) Antarctic-related mapping functionality in [prtools](https://github.com/pierreroudier/prtools), [atlasr](https://github.com/jiho/atlasr), and [sospatial](https://github.com/AustralianAntarcticDivision/sospatial).
 
 ### Environmental Data
 
-- [blueant](https://github.com/AustralianAntarcticDivision/blueant) and its companion package [bowerbird](https://github.com/AustralianAntarcticDivision/bowerbird) provide a mechanism to download a range of environmental data including satellite-derived sea ice, sea surface temperature, topography, ocean colour (chlorophyll-*a*), and meteorological data from various providers. Many of these data sets can be read and manipulated with <pkg>raster</pkg> and similar packages: the [spatial task view](https://cran.r-project.org/web/views/Spatial.html) is a good resource here.
+- [blueant](https://github.com/AustralianAntarcticDivision/blueant) and its companion package [bowerbird](https://github.com/ropensci/bowerbird) provide a mechanism to download a range of environmental data including satellite-derived sea ice, sea surface temperature, topography, ocean colour (chlorophyll-*a*), Argo float, and meteorological data from various providers. Many of these data sets can be read and manipulated with <pkg>raster</pkg> and similar packages: the [spatial task view](https://cran.r-project.org/web/views/Spatial.html) is a good resource here.
 
 - the [PolarWatch](https://polarwatch.noaa.gov/) project aims to enable data discovery and broader use of high-latitude ocean remote sensing data sets. The dedicated ERDDAP server (https://polarwatch.noaa.gov/erddap) is accessible to R users with <pkg>rerddap</pkg>.
 
 - <pkg>rsoi</pkg> downloads the most up to date Southern Oscillation Index, Oceanic Nino Index, and North Pacific Gyre Oscillation data.
 
+- [whatarelief](https://github.com/hypertidy/whatarelief) provides simple access to elevation/bathymetry data including GEBCO, along with imagery, coastline, and other data.
 
 ### Oceanography
 
@@ -58,15 +59,15 @@ Mapping is a very common task, and in an Antarctic/Southern Ocean context brings
 
 - [obistools](https://github.com/iobis/obistools) and <pkg>scrubr</pkg> for quality-checking occurrence data.
 
-- a package for the data behind the [Mapping Application for Penguin Populations and Projected Dynamics (MAPPPD)](http://www.penguinmap.com/) is in planning: contact [Grant Humphries](mailto:grwhumphries@blackbawks.net).
+- [mapppdr](https://github.com/CCheCastaldo/mapppdr) provides data and other functionality related to the [Mapping Application for Penguin Populations and Projected Dynamics (MAPPPD)](http://www.penguinmap.com/) project.
 
-- diet data [sohungry](https://github.com/SCAR/sohungry) and allometric equations [solong](https://github.com/SCAR/solong)
+- Southern Ocean diet data [sohungry](https://github.com/SCAR/sohungry) and allometric equations [solong](https://github.com/SCAR/solong).
 
 ### Animal tracking
 
 Tracking of animals using satellite, GPS, or light-level geolocation tags is common, and there are many R packages that can help with this. See the [spatiotemporal task view](https://cloud.r-project.org/web/views/SpatioTemporal.html) for a more complete list. Of particular interest may be:
 
-- [TwilightFree](https://github.com/ABindoff/TwilightFree) provides a method for processing light-level geolocation data that is robust to noise (sensor shading and obscuration) and may be particularly suitable for Southern Ocean applications.
+- [SGAT](https://github.com/SWotherspoon/SGAT) and [TwilightFree](https://github.com/ABindoff/TwilightFree) provide methods for processing light-level geolocation data that are robust to noise (sensor shading and obscuration) and may be particularly suitable for Southern Ocean applications.
 
 - <pkg>foieGras</pkg> fits continuous-time random walk and correlated random walk state-space models to filter Argos satellite location data.
 

@@ -28,26 +28,22 @@ Sumner, Grant Humphries, Hsun-yi Hsieh, and Anton Van de Putte.
 
 ### Taxonomic Data
 
-The Register of Antarctic Marine Species (RAMS) is the authoritative
-taxonomic database for Antarctic marine organisms. RAMS is part of the
-World Register of Marine Species (WoRMS).
+The Register of Antarctic Species (RAS) is the authoritative taxonomic
+database for Antarctic organisms, both marine and terrestrial. It
+supersedes RAMS (the Register of Antarctic Marine Species). RAS is
+hosted within the same data infrastructure as the World Register of
+Marine Species (WoRMS), and so the `worrms` R package provides
+convenient access.
 
   - [worrms](https://cran.rstudio.com/web/packages/worrms/index.html) client for the
     [WoRMS](http://www.marinespecies.org/) API. Contains mostly
-    taxonomic data, but also trait data.
+    taxonomic data, but also trait data. To include terrestrial taxa in
+    your searches, set `marine_only = FALSE`.
   - [taxize](https://cran.rstudio.com/web/packages/taxize/index.html) provides access to 20ish
     sources of taxonomic data sources, including WoRMS. It has
     consistent data outputs and function interfaces across the different
     data sources so that you don’t need to tailor your code to different
     taxonomic data providers.
-
-RAMS is currently being extended to cover non-marine taxa, which will
-become the Register of Antarctic Species (RAS). Hopefully this will
-remain covered by `worrms` and the server-side infrastructure hosted by
-VLIZ. There is also the
-[biotaxa](https://github.com/hhsieh/biotaxa_Rpackage) package in
-development for working with RAS (visualising and predicting the growth
-in taxonomic diversity over time).
 
 For more detail on R packages dealing with taxonomy in general, see the
 [rOpenSci taxonomy task view](https://github.com/ropensci/taxonomy) .
@@ -61,11 +57,13 @@ the 180°E line, adding commonly-desired features such as ocean fronts,
 management boundaries, sea ice extent, stations and other geographic
 features, and common contextual layers such as bathymetry.
 
-  - [SOmap](https://github.com/AustralianAntarcticDivision/SOmap) is in
-    development, but aims to provide straightforward mapping functions
-    for Southern Ocean (polar stereographic) maps, along with
-    commonly-used management and contextual layers such as MPA
-    boundaries and ocean fronts.
+  - [SOmap](https://github.com/AustralianAntarcticDivision/SOmap) aims
+    to provide straightforward mapping functions for Southern Ocean
+    (polar stereographic) maps, along with commonly-used management and
+    contextual layers such as MPA boundaries and ocean fronts.
+
+  - [CCAMLRGIS](https://cran.rstudio.com/web/packages/CCAMLRGIS/index.html) provides similar
+    mapping outputs but focused on the CAMLR Convention Area.
 
   - [antanym](https://github.com/SCAR/antanym) provides geographic place
     name data from the SCAR Composite Gazetteer of Antarctica, with
@@ -83,10 +81,9 @@ features, and common contextual layers such as bathymetry.
     data, based on some well known remotely sensed data sets for sea ice
     concentration, sea surface temperature and chlorophyll- *a* .
 
-  - there is some Antarctic-related mapping functionality in
+  - there is (somewhat dated) Antarctic-related mapping functionality in
     [prtools](https://github.com/pierreroudier/prtools) ,
-    [atlasr](https://github.com/jiho/atlasr) ,
-    [CCAMLRGIS](https://github.com/ccamlr/CCAMLRGIS) , and
+    [atlasr](https://github.com/jiho/atlasr) , and
     [sospatial](https://github.com/AustralianAntarcticDivision/sospatial)
     .
 
@@ -94,10 +91,10 @@ features, and common contextual layers such as bathymetry.
 
   - [blueant](https://github.com/AustralianAntarcticDivision/blueant)
     and its companion package
-    [bowerbird](https://github.com/AustralianAntarcticDivision/bowerbird)
-    provide a mechanism to download a range of environmental data
-    including satellite-derived sea ice, sea surface temperature,
-    topography, ocean colour (chlorophyll- *a* ), and meteorological
+    [bowerbird](https://github.com/ropensci/bowerbird) provide a
+    mechanism to download a range of environmental data including
+    satellite-derived sea ice, sea surface temperature, topography,
+    ocean colour (chlorophyll- *a* ), Argo float, and meteorological
     data from various providers. Many of these data sets can be read and
     manipulated with [raster](https://cran.rstudio.com/web/packages/raster/index.html) and similar
     packages: the [spatial task
@@ -113,6 +110,10 @@ features, and common contextual layers such as bathymetry.
   - [rsoi](https://cran.rstudio.com/web/packages/rsoi/index.html) downloads the most up to date
     Southern Oscillation Index, Oceanic Nino Index, and North Pacific
     Gyre Oscillation data.
+
+  - [whatarelief](https://github.com/hypertidy/whatarelief) provides
+    simple access to elevation/bathymetry data including GEBCO, along
+    with imagery, coastline, and other data.
 
 ### Oceanography
 
@@ -147,13 +148,14 @@ features, and common contextual layers such as bathymetry.
     [scrubr](https://cran.rstudio.com/web/packages/scrubr/index.html) for quality-checking
     occurrence data.
 
-  - a package for the data behind the [Mapping Application for Penguin
+  - [mapppdr](https://github.com/CCheCastaldo/mapppdr) provides data and
+    other functionality related to the [Mapping Application for Penguin
     Populations and Projected Dynamics
-    (MAPPPD)](http://www.penguinmap.com/) is in planning: contact [Grant
-    Humphries](mailto:grwhumphries@blackbawks.net) .
+    (MAPPPD)](http://www.penguinmap.com/) project.
 
-  - diet data [sohungry](https://github.com/SCAR/sohungry) and
-    allometric equations [solong](https://github.com/SCAR/solong)
+  - Southern Ocean diet data
+    [sohungry](https://github.com/SCAR/sohungry) and allometric
+    equations [solong](https://github.com/SCAR/solong) .
 
 ### Animal tracking
 
@@ -163,9 +165,10 @@ See the [spatiotemporal task
 view](https://cloud.r-project.org/web/views/SpatioTemporal.html) for a
 more complete list. Of particular interest may be:
 
-  - [TwilightFree](https://github.com/ABindoff/TwilightFree) provides a
-    method for processing light-level geolocation data that is robust to
-    noise (sensor shading and obscuration) and may be particularly
+  - [SGAT](https://github.com/SWotherspoon/SGAT) and
+    [TwilightFree](https://github.com/ABindoff/TwilightFree) provide
+    methods for processing light-level geolocation data that are robust
+    to noise (sensor shading and obscuration) and may be particularly
     suitable for Southern Ocean applications.
 
   - [foieGras](https://cran.rstudio.com/web/packages/foieGras/index.html) fits continuous-time
@@ -187,24 +190,14 @@ category.
 
 </div>
 
-### CRAN packages:
+### CRAN packages
 
-  - [foieGras](https://cran.rstudio.com/web/packages/foieGras/index.html)
-  - [graticule](https://cran.rstudio.com/web/packages/graticule/index.html)
-  - [oce](https://cran.rstudio.com/web/packages/oce/index.html)
-  - [orsifronts](https://cran.rstudio.com/web/packages/orsifronts/index.html)
-  - [palr](https://cran.rstudio.com/web/packages/palr/index.html)
-  - [raster](https://cran.rstudio.com/web/packages/raster/index.html)
-  - [rerddap](https://cran.rstudio.com/web/packages/rerddap/index.html)
-  - [rgbif](https://cran.rstudio.com/web/packages/rgbif/index.html)
-  - [robis](https://cran.rstudio.com/web/packages/robis/index.html)
-  - [rsoi](https://cran.rstudio.com/web/packages/rsoi/index.html)
-  - [scrubr](https://cran.rstudio.com/web/packages/scrubr/index.html)
-  - [spocc](https://cran.rstudio.com/web/packages/spocc/index.html)
-  - [taxize](https://cran.rstudio.com/web/packages/taxize/index.html)
-  - [worrms](https://cran.rstudio.com/web/packages/worrms/index.html)
+|            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| *Core:*    | *None*.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| *Regular:* | [CCAMLRGIS](https://CRAN.R-project.org/package=CCAMLRGIS), [foieGras](https://CRAN.R-project.org/package=foieGras), [graticule](https://CRAN.R-project.org/package=graticule), [oce](https://CRAN.R-project.org/package=oce), [orsifronts](https://CRAN.R-project.org/package=orsifronts), [palr](https://CRAN.R-project.org/package=palr), [raster](https://CRAN.R-project.org/package=raster), [rerddap](https://CRAN.R-project.org/package=rerddap), [rgbif](https://CRAN.R-project.org/package=rgbif), [robis](https://CRAN.R-project.org/package=robis), [rsoi](https://CRAN.R-project.org/package=rsoi), [scrubr](https://CRAN.R-project.org/package=scrubr), [spocc](https://CRAN.R-project.org/package=spocc), [taxize](https://CRAN.R-project.org/package=taxize), [worrms](https://CRAN.R-project.org/package=worrms). |
 
-### Related links:
+### Related links
 
   - [taxonomy task view](https://github.com/ropensci/taxonomy)
   - [spatial task

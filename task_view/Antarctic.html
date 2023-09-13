@@ -1,17 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <title>CRAN Task View: Antarctic and Southern Ocean Science</title>
-<link rel="stylesheet" type="text/css" href="../CRAN_web.css">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="citation_title" content="CRAN Task View: Antarctic and Southern Ocean Science">
 <meta name="citation_author" content="Ben Raymond">
-<meta name="citation_publication_date" content="2021-03-09">
-<meta name="citation_public_url" content="https://CRAN.R-project.org/view=Antarctic">
+<meta name="citation_publication_date" content="2023-09-13">
 <meta name="DC.title" content="CRAN Task View: Antarctic and Southern Ocean Science">
 <meta name="DC.creator" content="Ben Raymond">
-<meta name="DC.issued" content="2021-03-09">
-<meta name="DC.identifier" content="https://CRAN.R-project.org/view=Antarctic">
+<meta name="DC.issued" content="2023-09-13">
+<meta name="og:title" content="CRAN Task View: Antarctic and Southern Ocean Science">
+<meta name="og:description" content="This article is about R packages that are relevant to Antarctic and Southern Ocean science. It includes packages in various states of maturity, including some in planning or very early stages of development.">
+<meta name="og:type" content="website">
+<meta name="twitter:card" content="summary">
 </head>
 <body>
   <h2>Antarctic and Southern Ocean Science</h2>
@@ -38,7 +39,9 @@
         Taxonomic Data
       </h3>
       <p>
-        The Register of Antarctic Marine Species (RAMS) is the authoritative taxonomic database for Antarctic marine organisms. RAMS is part of the World Register of Marine Species (WoRMS).
+        The Register of Antarctic Species (RAS) is the authoritative taxonomic database for Antarctic organisms, both marine and terrestrial. It supersedes RAMS (the Register of Antarctic Marine Species). RAS is hosted within the same data infrastructure as the World Register of Marine Species (WoRMS), and so the
+<tt>worrms</tt>
+        R package provides convenient access.
       </p>
       <ul>
 <li>
@@ -47,7 +50,8 @@
           <a href="http://www.marinespecies.org/">
             WoRMS
           </a>
-          API. Contains mostly taxonomic data, but also trait data.
+          API. Contains mostly taxonomic data, but also trait data. To include terrestrial taxa in your searches, set
+<tt>marine_only = FALSE</tt>.
         </li>
         <li>
 <a href="../packages/taxize/index.html">taxize</a>
@@ -55,15 +59,6 @@
         </li>
       </ul>
 <p>
-        RAMS is currently being extended to cover non-marine taxa, which will become the Register of Antarctic Species (RAS). Hopefully this will remain covered by
-<tt>worrms</tt>
-        and the server-side infrastructure hosted by VLIZ. There is also the
-        <a href="https://github.com/hhsieh/biotaxa_Rpackage">
-          biotaxa
-        </a>
-        package in development for working with RAS (visualising and predicting the growth in taxonomic diversity over time).
-      </p>
-      <p>
         For more detail on R packages dealing with taxonomy in general, see the
         <a href="https://github.com/ropensci/taxonomy">
           rOpenSci taxonomy task view
@@ -81,7 +76,13 @@
             <a href="https://github.com/AustralianAntarcticDivision/SOmap">
               SOmap
             </a>
-            is in development, but aims to provide straightforward mapping functions for Southern Ocean (polar stereographic) maps, along with commonly-used management and contextual layers such as MPA boundaries and ocean fronts.
+            aims to provide straightforward mapping functions for Southern Ocean (polar stereographic) maps, along with commonly-used management and contextual layers such as MPA boundaries and ocean fronts.
+          </p>
+        </li>
+        <li>
+          <p>
+<a href="../packages/CCAMLRGIS/index.html">CCAMLRGIS</a>
+            provides similar mapping outputs but focused on the CAMLR Convention Area.
           </p>
         </li>
         <li>
@@ -115,15 +116,12 @@
         </li>
         <li>
           <p>
-            there is some Antarctic-related mapping functionality in
+            there is (somewhat dated) Antarctic-related mapping functionality in
             <a href="https://github.com/pierreroudier/prtools">
               prtools
             </a>,
             <a href="https://github.com/jiho/atlasr">
               atlasr
-            </a>,
-            <a href="https://github.com/ccamlr/CCAMLRGIS">
-              CCAMLRGIS
             </a>, and
             <a href="https://github.com/AustralianAntarcticDivision/sospatial">
               sospatial
@@ -141,13 +139,13 @@
               blueant
             </a>
             and its companion package
-            <a href="https://github.com/AustralianAntarcticDivision/bowerbird">
+            <a href="https://github.com/ropensci/bowerbird">
               bowerbird
             </a>
             provide a mechanism to download a range of environmental data including satellite-derived sea ice, sea surface temperature, topography, ocean colour (chlorophyll-
             <em>
               a
-            </em>), and meteorological data from various providers. Many of these data sets can be read and manipulated with
+            </em>), Argo float, and meteorological data from various providers. Many of these data sets can be read and manipulated with
 <a href="../packages/raster/index.html">raster</a>
             and similar packages: the
             <a href="https://cran.r-project.org/web/views/Spatial.html">
@@ -170,6 +168,14 @@
           <p>
 <a href="../packages/rsoi/index.html">rsoi</a>
             downloads the most up to date Southern Oscillation Index, Oceanic Nino Index, and North Pacific Gyre Oscillation data.
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href="https://github.com/hypertidy/whatarelief">
+              whatarelief
+            </a>
+            provides simple access to elevation/bathymetry data including GEBCO, along with imagery, coastline, and other data.
           </p>
         </li>
       </ul>
@@ -232,26 +238,26 @@
         </li>
         <li>
           <p>
-            a package for the data behind the
+            <a href="https://github.com/CCheCastaldo/mapppdr">
+              mapppdr
+            </a>
+            provides data and other functionality related to the
             <a href="http://www.penguinmap.com/">
               Mapping Application for Penguin Populations and Projected Dynamics (MAPPPD)
             </a>
-            is in planning: contact
-            <a href="mailto:grwhumphries@blackbawks.net">
-              Grant Humphries
-            </a>.
+            project.
           </p>
         </li>
         <li>
           <p>
-            diet data
+            Southern Ocean diet data
             <a href="https://github.com/SCAR/sohungry">
               sohungry
             </a>
             and allometric equations
             <a href="https://github.com/SCAR/solong">
               solong
-            </a>
+            </a>.
           </p>
         </li>
       </ul>
@@ -268,10 +274,14 @@
       <ul>
 <li>
           <p>
+            <a href="https://github.com/SWotherspoon/SGAT">
+              SGAT
+            </a>
+            and
             <a href="https://github.com/ABindoff/TwilightFree">
               TwilightFree
             </a>
-            provides a method for processing light-level geolocation data that is robust to noise (sensor shading and obscuration) and may be particularly suitable for Southern Ocean applications.
+            provide methods for processing light-level geolocation data that are robust to noise (sensor shading and obscuration) and may be particularly suitable for Southern Ocean applications.
           </p>
         </li>
         <li>
@@ -305,24 +315,20 @@
       </ul>
 </div>
 
-  <h3>CRAN packages:</h3>
-  <ul>
-<li><a href="../packages/foieGras/index.html">foieGras</a></li>
-    <li><a href="../packages/graticule/index.html">graticule</a></li>
-    <li><a href="../packages/oce/index.html">oce</a></li>
-    <li><a href="../packages/orsifronts/index.html">orsifronts</a></li>
-    <li><a href="../packages/palr/index.html">palr</a></li>
-    <li><a href="../packages/raster/index.html">raster</a></li>
-    <li><a href="../packages/rerddap/index.html">rerddap</a></li>
-    <li><a href="../packages/rgbif/index.html">rgbif</a></li>
-    <li><a href="../packages/robis/index.html">robis</a></li>
-    <li><a href="../packages/rsoi/index.html">rsoi</a></li>
-    <li><a href="../packages/scrubr/index.html">scrubr</a></li>
-    <li><a href="../packages/spocc/index.html">spocc</a></li>
-    <li><a href="../packages/taxize/index.html">taxize</a></li>
-    <li><a href="../packages/worrms/index.html">worrms</a></li>
-  </ul>
-<h3>Related links:</h3>
+  <h3>CRAN packages</h3>
+  <table>
+<tr style="vertical-align: top;">
+<td><i>Core:</i></td>
+<td>
+<i>None</i>.</td>
+</tr>
+<tr style="vertical-align: top;">
+<td><i>Regular:</i></td>
+<td>
+<a href="https://CRAN.R-project.org/package=CCAMLRGIS">CCAMLRGIS</a>, <a href="https://CRAN.R-project.org/package=foieGras">foieGras</a>, <a href="https://CRAN.R-project.org/package=graticule">graticule</a>, <a href="https://CRAN.R-project.org/package=oce">oce</a>, <a href="https://CRAN.R-project.org/package=orsifronts">orsifronts</a>, <a href="https://CRAN.R-project.org/package=palr">palr</a>, <a href="https://CRAN.R-project.org/package=raster">raster</a>, <a href="https://CRAN.R-project.org/package=rerddap">rerddap</a>, <a href="https://CRAN.R-project.org/package=rgbif">rgbif</a>, <a href="https://CRAN.R-project.org/package=robis">robis</a>, <a href="https://CRAN.R-project.org/package=rsoi">rsoi</a>, <a href="https://CRAN.R-project.org/package=scrubr">scrubr</a>, <a href="https://CRAN.R-project.org/package=spocc">spocc</a>, <a href="https://CRAN.R-project.org/package=taxize">taxize</a>, <a href="https://CRAN.R-project.org/package=worrms">worrms</a>.</td>
+</tr>
+</table>
+<h3>Related links</h3>
   <ul>
 <li><a href="https://github.com/ropensci/taxonomy">
   taxonomy task view
